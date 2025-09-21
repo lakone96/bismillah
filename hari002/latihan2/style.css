@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: gray;
+}
+
+.pendaftaran {
+    width: 60%;
+    margin: auto;
+    /* text-align: center; */
+}
+.pendaftaran h1 {
+    text-align: center;
+}
+
+.form table{
+    margin: auto;
+    background-color: aliceblue;
+    padding: 3em 2em 5em;
+}

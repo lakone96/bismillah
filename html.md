@@ -1,19 +1,24 @@
-Berikut adalah daftar tag HTML yang umum digunakan beserta atribut pentingnya (tidak termasuk tag yang usang/deprecated):
+### Daftar Tag HTML dan Atributnya
 
-### 1. Tag Struktur Dokumen
-
-- **`<!DOCTYPE html>`**: Mendefinisikan tipe dokumen sebagai HTML5.
-- **`<html>`**: Elemen root dokumen.
-  - Atribut: `lang` (bahasa dokumen, contoh: `lang="id"`).
-- **`<head>`**: Berisi metadata dokumen.
-- **`<title>`**: Judul halaman (ditampilkan di tab browser).
-- **`<meta>`**: Metadata tambahan.
-  - Atribut: `charset` (encoding, contoh: `charset="UTF-8"`), `name="viewport"` (untuk responsive design), `content`.
-- **`<body>`**: Konten utama halaman.
+Berikut adalah penjelasan detail tentang tag HTML yang umum digunakan beserta atribut-atributnya.
 
 ---
 
-### 2. Tag Konten Teks
+## --> 1. Tag Struktur Dokumen
+
+- **`<!DOCTYPE html>`** Mendefinisikan tipe dokumen sebagai HTML5.
+- **`<html>`** Tag root dari dokumen HTML.
+- **`<head>`** Berisi metadata tentang dokumen, seperti judul, stylesheet, dan script.
+- **`<title>`** Menentukan judul dokumen yang ditampilkan di tab browser.
+- **`<meta>`** Menyediakan metadata tentang dokumen HTML.
+- Atribut penting: `charset` : Menentukan encoding karakter (contoh: `charset="UTF-8"`)
+  `name`: Nama metadata (contoh: `name="viewport"`, `name="description"`)
+    `content`: Nilai metadata (contoh: `content="width=device-width, initial-scale=1.0"`)
+- **` <body> `** Berisi konten utama dokumen HTML.
+
+---
+
+## --> 2. Tag Heading & Teks
 
 - **`<h1>` hingga `<h6>`**: Heading (judul dan subjudul).
 - **`<p>`**: Paragraf.
@@ -31,103 +36,129 @@ Berikut adalah daftar tag HTML yang umum digunakan beserta atribut pentingnya (t
 
 ---
 
-### 3. Tag Multimedia
-
-- **`<img>`**: Gambar.
-  - Atribut: `src` (sumber gambar), `alt` (teks alternatif), `width`, `height`, `loading="lazy"`.
-- **`<video>`**: Video.
-  - Atribut: `src`, `controls`, `autoplay`, `loop`, `muted`, `poster` (thumbnail).
-- **`<audio>`**: Audio.
-  - Atribut: `src`, `controls`, `autoplay`, `loop`.
-- **`<source>`**: Sumber alternatif media (dalam `<video>`/`<audio>`).
-  - Atribut: `src`, `type` (contoh: `type="video/mp4"`).
-
----
-
-### 4. Tag Tautan
-
-- **`<a>`**: Tautan/hyperlink.
-  - Atribut: `href` (URL), `target` (contoh: `target="_blank"` untuk buka tab baru), `rel` (contoh: `rel="noopener"`).
-
----
-
-### 5. Tag List
-
-- **`<ul>`**: Unordered list (list dengan bullet).
-- **`<ol>`**: Ordered list (list berangka).
-  - Atribut: `type` (jenis penomoran), `start` (mulai dari angka tertentu).
-- **`<li>`**: Item list.
+## --> 3. Tag Multimedia
+-**` <img> `** Menampilkan gambar.
+- Atribut penting:
+`src`: URL gambar
+`alt`: Teks alternatif untuk aksesibilitas
+`width`: Lebar gambar (dalam piksel)
+`height`: Tinggi gambar (dalam piksel)
+`loading`: Kontrol lazy loading (loading="lazy")
+-**` <video> `** Menampilkan video.
+- Atribut penting:
+`src`: URL video
+`controls`: Menampilkan kontrol pemutaran
+`autoplay`: Memutar video otomatis
+`loop`: Mengulang video
+`muted`: Mematikan suara
+`poster`: Gambar thumbnail sebelum pemutaran
+-**` <audio> `** Menampilkan audio.
+- Atribut penting:
+`src`: URL audio
+`controls`: Menampilkan kontrol pemutaran
+`autoplay`: Memutar audio otomatis
+`loop`: Mengulang audio
 
 ---
 
-### 6. Tag Tabel
-
-- **`<table>`**: Tabel.
-- **`<thead>`**: Header tabel.
-- **`<tbody>`**: Body tabel.
-- **`<tfoot>`**: Footer tabel.
-- **`<tr>`**: Baris tabel.
-- **`<th>`**: Sel header tabel.
-  - Atribut: `colspan`, `rowspan`.
-- **`<td>`**: Sel data tabel.
-  - Atribut: `colspan`, `rowspan`.
+## --> 4. Tag Tautan
+-**` <a> `** Membuat hyperlink.
+- Atribut penting:
+`href`: URL tujuan
+`target`: Menentukan tempat membuka tautan (`_blank` untuk tab baru)
+`rel`: Menentukan hubungan dengan dokumen tertaut (`noopener, noreferrer`)
 
 ---
 
-### 7. Tag Formulir
-
-- **`<form>`**: Formulir input.
-  - Atribut: `action` (URL pengolahan data), `method` (`GET`/`POST`), `target`.
-- **`<input>`**: Field input.
-  - Atribut: `type` (text, email, password, number, checkbox, radio, date, file, dll.), `name`, `placeholder`, `required`, `value`.
-- **`<textarea>`**: Input teks multi-baris.
-  - Atribut: `rows`, `cols`, `name`, `placeholder`.
-- **`<select>`**: Dropdown list.
-- **`<option>`**: Opsi dalam `<select>`.
-  - Atribut: `value`, `selected`.
-- **`<label>`**: Label untuk input.
-  - Atribut: `for` (id input terkait).
-- **`<button>`**: Tombol.
-  - Atribut: `type` (submit, reset, button).
+## --> 5. Tag List
+-**` <ul> `** Membuat unordered list (list dengan bullet).
+-**` <ol> `** Membuat ordered list (list berurutan dengan angka/huruf).
+- Atribut penting:
+`type`: Jenis penomoran (`1, A, a, I, i`)
+`start`: Nilai awal penomoran
+-**` <li> `** Item dalam list.
 
 ---
 
-### 8. Tag Semantik HTML5
-
-- **`<header>`**: Header halaman atau section.
-- **`<nav>`**: Navigasi.
-- **`<main>`**: Konten utama.
-- **`<article>`**: Konten independen (artikel, blog post).
-- **`<section>`**: Bagian dalam dokumen.
-- **`<aside>`**: Konten samping (sidebar).
-- **`<footer>`**: Footer halaman atau section.
-- **`<figure>`**: Konten mandiri (gambar, diagram).
-- **`<figcaption>`**: Keterangan untuk `<figure>`.
-
----
-
-### 9. Tag Lainnya
-
-- **`<div>`**: Kontainer generik untuk grouping.
-  - Atribut: `class`, `id`.
-- **`<iframe>`**: Embed konten dari sumber lain.
-  - Atribut: `src`, `width`, `height`, `title`.
-- **`<progress>`**: Progress bar.
-  - Atribut: `value`, `max`.
-- **`<time>`**: Menandai waktu/tanggal.
-  - Atribut: `datetime` (format mesin).
+## --> 6. Tag Tabel
+-**` <table> `** Membuat tabel.
+-**` <tr> `** Membuat baris tabel.
+-**` <th> `** Membuat sel header tabel.
+- Atribut penting:
+`colspan`: Jumlah kolom yang dijangkau
+`rowspan`: Jumlah baris yang dijangkau
+-**` <td> `** Membuat sel data tabel.
+Atribut penting:
+`colspan`: Jumlah kolom yang dijangkau
+`rowspan`: Jumlah baris yang dijangkau
 
 ---
 
-### Catatan:
+## --> 7. Tag Formulir
+-**` <form> `** Membuat form untuk input pengguna.
+- Atribut penting:
+`action`: URL yang akan memproses form
+`method`: Metode HTTP (`GET` atau `POST`)
+`target`: Di mana menampilkan respons
+-**` <input> `** Membuat field input.
+- Atribut penting:
+`type`: Jenis input (`text, password, email, number, checkbox, radio, tel, url, range, date,week, mounth, time, color`.)
+`name`: Nama field
+`placeholder`: Teks petunjuk
+`required`: Wajib diisi
+`value`: Nilai default
+-**` <textarea> `** Membuat area teks multi-baris.
+- Atribut penting:
+`rows`: Jumlah baris
+`cols`: Jumlah kolom
+`name`: Nama field
+-**` <select> `** Membuat dropdown list.
+-**` <option> `** Membuat opsi dalam dropdown.
+- Atribut penting:
+`value`: Nilai opsi
+`selected`: Opsi yang terpilih secara default
+-**` <button> `** Membuat tombol.
+- Atribut penting:
+`type`: Jenis tombol (`submit, reset, button`)
 
-- **Atribut Global**: Semua tag di atas mendukung atribut global seperti `class`, `id`, `style`, `title`, `data-*`, `hidden`, `lang`, `tabindex`, dll.
-- **Atribut Event**: Seperti `onclick`, `onmouseover`, dll. (biasanya ditambahkan via JavaScript).
-- **HTML5 Focus**: Tag semantik seperti `<article>`, `<section>`, dll. lebih disarankan untuk menggantikan `<div>` yang generik.
+---
 
-Pastikan untuk selalu memvalidasi HTML menggunakan tools seperti [W3C Validator](https://validator.w3.org/) untuk memastikan kesesuaian dengan standar terkini.
+## --> 8. Tag Semantik HTML5
+-**` <header> `** Mewakili header dokumen atau section.
+-**` <nav> `** Mewakili bagian navigasi.
+-**` <main> `** Mewakili konten utama dokumen.
+-**` <aside> `** Mewakili konten samping (sidebar).
+-**` <footer> `** Mewakili footer dokumen atau section.
+-**` <figure> `** Mengelompokkan konten media dengan keterangannya.
+-**` <figcaption> `** Menambahkan keterangan untuk `<figure>`.
 
-### Entitas :
+---
+
+## --> 9. Tag Lainnya
+-**` <div> `** Membuat kontainer generik untuk pengelompokan dan styling.
+- Atribut penting:
+`class`: Kelas CSS
+`id`: Identifier unik
+-**` <iframe> `** Menanamkan dokumen HTML lain.
+- Atribut penting:
+`src`: URL dokumen
+`width`: Lebar iframe
+`height`: Tinggi iframe
+`title`: Judul untuk aksesibilitas
+
+---
+
+## --> 10. Atribut Global
+Semua tag HTML mendukung atribut global berikut:
+`class`: Menentukan satu atau beberapa kelas CSS
+`id`: Identifier unik
+`title`: Informasi tambahan (ditampilkan sebagai tooltip)
+`data-\*`: Atribut kustom untuk menyimpan data
+`hidden`: Menyembunyikan elemen
+
+---
+
+## --> Entitas :
 
 © &#169; &copy; COPYRIGHT SYMBOL
 ® &#174; &reg; REGISTERED TRADEMARK
