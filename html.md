@@ -126,3 +126,20 @@ Berikut adalah daftar tag HTML yang umum digunakan beserta atribut pentingnya (t
 - **HTML5 Focus**: Tag semantik seperti `<article>`, `<section>`, dll. lebih disarankan untuk menggantikan `<div>` yang generik.
 
 Pastikan untuk selalu memvalidasi HTML menggunakan tools seperti [W3C Validator](https://validator.w3.org/) untuk memastikan kesesuaian dengan standar terkini.
+
+### Entitas :
+
+© &#169; &copy; COPYRIGHT SYMBOL
+® &#174; &reg; REGISTERED TRADEMARK
+€ &#8364; &euro; EURO SIGN
+™ &#8482; &trade; TRADEMARK
+← &#8592; &larr; LEFTWARDS ARROW
+↑ &#8593; &uarr; UPWARDS ARROW
+→ &#8594; &rarr; RIGHTWARDS ARROW
+↓ &#8595; &darr; DOWNWARDS ARROW
+♠ &#9824; &spades; BLACK SPADE SUIT
+♣ &#9827; &clubs; BLACK CLUB SUIT
+♥ &#9829; &hearts; BLACK HEART SUIT
+♦ &#9830; &diams; BLACK DIAMOND SUIT
+
+selengkapnya : [W3shools](https://www.w3schools.com/charsets/ref_html_symbols.asp)
