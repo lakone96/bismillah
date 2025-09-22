@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hari003 Latihan 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+        <h1>Form Pendaftaran</h1>
+        <br><br><hr>
+    </header>
+    <form action="" method="post">
+      <label for="nama">Nama :</label><br />
+      <input type="text" name="nama" id="nama" /><br />
+      <label for="email">Email :</label><br />
+      <input type="" name="email" id="email" /><br />
+      <label for="password">Password :</label><br />
+      <input type="password" name="password" id="password" /><br />
+      <label for="jenis-kelamin">Pilih Jurusan :</label><br />
+      <input type="radio" name="jenis-kelamin" id="jenis-kelamin" /> Laki-laki
+      <input type="radio" name="jenis-kelamin" id="jenis-kelamin" /> Perempuan <br />
+      <label for="Jurusan">Jurusan :</label><br />
+        <select name="Jurusan" id="Jurusan">
+            <option value="informasi-telematika">Informasi Telematika</option>
+            <option value="teknik-sipil">Teknik Sipil</option>
+            <option value="sastra-inggris">Sastra Inggris</option>
+        </select><br>
+      <label for="alasan-bergabung">Alasan Bergabung :</label><br />
+      <textarea
+        name="alasan-bergabung"
+        id="alasan-bergabung"
+        placeholder="tulis disini .."
+        rows="5"
+        cols="30"
+      ></textarea
+      ><br />
+      <input type="checkbox" name="persetujuan" id="persetujuan" />
+      <label for="persetujuan">dengan ini menyetujui syarat dan ketentuan yang berlaku</label><br />
+      <button type="submit">kirim</button>
+    </form>
+  </body>
+</html>
