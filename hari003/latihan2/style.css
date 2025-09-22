@@ -8,13 +8,13 @@ body {
 }
 
 header {
-    height: 6em;
+    height: 3em;
     background-color: black;
     box-shadow: 0 5px 5em rgba(141, 141, 141, 0.514);
 }
 
 header img {
-    width: 7em;
+    width: 3em;
 }
 
 header a {
