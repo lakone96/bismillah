@@ -1,0 +1,12 @@
+/* Fonts Buka Puasa Bersama */
+
+/* https://www.fonts4free.net/buka-puasa-bersama-font.html */
+
+/* ---- */
+
+@font-face {
+  font-family: "Buka Puasa Bersama";
+  src: url("buka_puasa_bersama.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
