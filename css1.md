@@ -37,12 +37,35 @@ Namun, jika user mengubah font-size di browser, layout akan tetap scaling dengan
 
 #### Font
 
+- Cara menggunakan font yang kita inginkan :
+- di file CSS kita masukkan dulu
+---
+@font-face {
+    font-family : 'Nama Font Baru';
+    src: url('lokasi/file/fontbaru.eot');
+    src: url('lokasi/file/fontbaru.eot?iefix') format ('embedded-opentype')
+    src: url('lokasi/file/fontbaru.woff2') format('woff2')
+    src: url('lokasi/file/fontbaru.woff') format('woff')
+    src: url('lokasi/file/fontbaru.ttf') format('ttf')
+    src: url('lokasi/file/fontbaru.svg') format('svg')
+}
+
+
+@font-face {
+    font-family: Nuku-Nuku;
+    src: url(nuku-nuku.ttf) format(truetype);
+}
+---
+
 - font family : <-- mengatur jenis font
 - font size : <-- mengatur ukuran font yg disarankan
 - font weight : <-- mengatur jenis font (normal, bold, 100-900)
 - font-varian : <-- mengubah font menjadi small caps
 - font style : <-- mengubah font menjadi cetak miring (normal, italic, oblique)
 - line height : <-- mengatur spasi antar baris
+- text-transform: <-- Mengatur kapitalisasi teks (uppercase, lowercase, capitalize)
+- letter-spacing: <-- Mengatur spasi antar huruf
+- word-spacing: <-- Mengatur spasi antar kata
 
 # shorthand
 
@@ -51,8 +74,10 @@ Namun, jika user mengubah font-size di browser, layout akan tetap scaling dengan
 #### Font Styling / Text
 
 - color : <-- memberi warna teks
-- text-align: <-- mengatur posisi teks kanan kiri tengah
-- text-decoration: <-- mengatur dekorasi pada teks
+- text-align: <-- Mengatur perataan teks (left, right, center, justify)
+- text-decoration: <-- Mengatur dekorasi teks (underline, overline, line-through, none)
+
+---
 
 #### Background
 
@@ -226,41 +251,6 @@ max-width - Mengatur lebar maksimum elemen
 min-height - Mengatur tinggi minimum elemen
 max-height - Mengatur tinggi maksimum elemen
 
-Typography
-font-family - Mengatur jenis font teks
-
-font-size - Mengatur ukuran font teks
-
-font-weight - Mengatur ketebalan font (normal, bold, 100-900)
-
-font-style - Mengatur gaya font (normal, italic, oblique)
-
-line-height - Mengatur tinggi baris teks
-
-text-align - Mengatur perataan teks (left, right, center, justify)
-
-text-decoration - Mengatur dekorasi teks (underline, overline, line-through, none)
-
-text-transform - Mengatur kapitalisasi teks (uppercase, lowercase, capitalize)
-
-letter-spacing - Mengatur spasi antar huruf
-
-word-spacing - Mengatur spasi antar kata
-
-Colors & Backgrounds
-color - Mengatur warna teks
-
-background-color - Mengatur warna latar belakang elemen
-
-background-image - Mengatur gambar latar belakang elemen
-
-background-repeat - Mengatur pengulangan gambar latar (repeat, repeat-x, repeat-y, no-repeat)
-
-background-position - Mengatur posisi gambar latar (top, bottom, left, right, center)
-
-background-size - Mengatur ukuran gambar latar (auto, cover, contain, nilai spesifik)
-
-background-attachment - Mengatur apakah gambar latar scroll atau fixed (scroll, fixed)
 
 Effects
 
@@ -268,49 +258,30 @@ visibility - Mengatur visibilitas elemen (visible, hidden, collapse)
 
 Transforms & Transitions
 transform - Mengaplikasikan transformasi 2D atau 3D
-
 translate() - Memindahkan elemen
-
 rotate() - Memutar elemen
-
 scale() - Mengubah ukuran elemen
-
 skew() - Miringkan elemen sepanjang sumbu X dan Y
 
 transition - Shorthand untuk mengatur transisi
-
 transition-property - Menentukan properti yang akan ditransisikan
-
 transition-duration - Menentukan durasi transisi
-
 transition-timing-function - Menentukan kurva kecepatan transisi
-
 transition-delay - Menentukan penundaan sebelum transisi dimulai
 
 Animation
 animation - Shorthand untuk mengatur animasi
-
 animation-name - Menentukan nama @keyframes animasi
-
 animation-duration - Menentukan durasi animasi
-
 animation-timing-function - Menentukan kurva kecepatan animasi
-
 animation-delay - Menentukan penundaan sebelum animasi dimulai
-
 animation-iteration-count - Menentukan berapa kali animasi diulang
-
 animation-direction - Menentukan apakah animasi diputar mundur
-
 animation-fill-mode - Menentukan style yang diterapkan saat animasi tidak dimainkan
 
 Other Properties
 cursor - Mengatur jenis kursor saat di atas elemen
-
 overflow - Mengatur konten yang overflow (visible, hidden, scroll, auto)
-
 z-index - Mengatur tumpukan elemen (stacking order)
-
 box-sizing - Mengatur bagaimana lebar dan tinggi dihitung
-
 list-style - Mengatur style untuk list items
